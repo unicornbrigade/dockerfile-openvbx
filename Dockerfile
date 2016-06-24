@@ -13,7 +13,7 @@ RUN rm -fr /app && mkdir /app && \
 wget https://api.github.com/repos/twilio/OpenVBX/zipball/1.2.20 && \
 unzip 1.2.20 -d /tmp  && \
 cp -a /tmp/twilio*/. /app && \
-rm -rf /tmp/twilio*
+rm -rf /tmp/twilio* && \
 git clone https://github.com/chadsmith/OpenVBX-Plugin-Split.git /app/OpenVBX/plugins/OpenVBX-Plugin-Split
 
 # Add script to create openvbx database
